@@ -1,40 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta name="description" content="MM-OPERA introduces a 11,497-instance benchmark that probes open-ended association reasoning in large vision-language models through Remote-Item and In-Context Association tasks, hierarchical ability annotations, and LLM-as-a-Judge evaluation.">
+  <meta property="og:title" content="MM-OPERA: Benchmarking Open-ended Association Reasoning"/>
+  <meta property="og:description" content="Comprehensive project page for the MM-OPERA benchmark, covering tasks, dataset, evaluation, and key results."/>
+  <meta property="og:url" content="https://mm-opera-bench.github.io"/>
+  <meta property="og:image" content="static/images/mm_opera_overview-1.png" />
   <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:height" content="675"/>
 
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="twitter:title" content="MM-OPERA Benchmark"/>
+  <meta name="twitter:description" content="Open-ended association reasoning benchmark for LVLMs with 11,497 multimodal instances."/>
+  <meta name="twitter:image" content="static/images/mm_opera_overview-1.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="keywords" content="MM-OPERA, association reasoning, LVLM benchmark, Remote-Item Association, In-Context Association, process reward judge, multimodal datasets">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-  <title>Academic Project Page</title>
+  <title>MM-OPERA: Benchmarking Open-ended Association Reasoning</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -45,268 +35,367 @@
   <script src="static/js/index.js"></script>
 </head>
 <body>
-
-
-  <section class="hero">
+  <section class="hero is-light">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">MM-OPERA: Benchmarking Open-ended Association Reasoning for Large Vision-Language Models</h1>
+            <p class="subtitle is-4">Measuring divergent and convergent multimodal association intelligence</p>
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
+              <span class="author-block">MM-OPERA Collaboration<sup>*</sup></span>
+              <span class="author-block">Anonymous Submission &bull; NeurIPS 2025 (under review)</span>
+            </div>
+            <p class="is-size-6">* Equal contribution details withheld for double-blind review.</p>
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="1120_MM_OPERA_Benchmarking_Ope%20(1).pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Paper PDF</span>
                 </a>
               </span>
+              <span class="link-block">
+                <a href="https://huggingface.co/datasets/titic/MM-OPERA" target="_blank" class="external-link button is-normal is-rounded is-info">
+                  <span class="icon"><i class="ai ai-huggingface"></i></span>
+                  <span>Dataset on HuggingFace</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="MM_OPERA_overview.pdf" target="_blank" class="external-link button is-normal is-rounded is-link">
+                  <span class="icon"><i class="fas fa-image"></i></span>
+                  <span>Overview Poster</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="#BibTeX" class="external-link button is-normal is-rounded">
+                  <span class="icon"><i class="fas fa-quote-right"></i></span>
+                  <span>BibTeX</span>
+                </a>
+              </span>
+            </div>
+            <p class="is-size-6">11,497 multimodal prompts | Remote-Item &amp; In-Context Association tasks | Hierarchical ability annotations | LLM-as-a-Judge evaluation</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-variable is-8">
+        <div class="column">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content">
+            <p>Large Vision-Language Models (LVLMs) have exhibited remarkable progress. However, deficiencies remain compared to human intelligence, such as hallucination and shallow pattern matching. In this work, we aim to evaluate a fundamental yet underexplored intelligence: association, a cornerstone of human cognition for creative thinking and knowledge integration. Current benchmarks, often limited to closed-ended tasks, fail to capture the complexity of open-ended association reasoning vital for real-world applications. To address this, we present MM-OPERA, a systematic benchmark with 11,497 instances across two open-ended tasks: Remote-Item Association (RIA) and In-Context Association (ICA), aligning association intelligence evaluation with human psychometric principles. It challenges LVLMs to resemble the spirit of divergent thinking and convergent associative reasoning through free-form responses and explicit reasoning paths. We deploy tailored LLM-as-a-Judge strategies to evaluate open-ended outputs, applying process-reward-informed judgment to dissect reasoning with precision. Extensive empirical studies on state-of-the-art LVLMs, including sensitivity analysis of task instances, validity analysis of LLM-as-a-Judge strategies, and diversity analysis across abilities, domains, languages, cultures, etc., provide a comprehensive and nuanced understanding of the limitations of current LVLMs in associative reasoning, paving the way for more human-like and general-purpose AI.</p>
+          </div>
+        </div>
+        <div class="column is-one-third-desktop">
+          <h2 class="title is-4">Contribution Highlights</h2>
+          <div class="content">
+            <ul>
+              <li><strong>MM-OPERA:</strong> We introduce a benchmark of 10,000+ instances for evaluating association reasoning, centered on Remote-Item Association (RIA) and In-Context Association (ICA) tasks inspired by classic psychometric studies. It spans 13 analytical dimensions to enable comprehensive assessment.</li>
+              <li><strong>LLM-as-a-Judge Strategies:</strong> We design tailored LLM-as-a-Judge methods that assess both response quality and reasoning processes, enabling fine-grained and reliable scoring.</li>
+              <li><strong>Profound Findings:</strong> Our analysis reveals key limitations of current LVLMs and highlights the critical role of association reasoning in advancing real-world, general-purpose AI.</li>
+              <li><strong>Hierarchical annotation:</strong> Level-1 divides associative abilities into Perception and Conception, Level-2 further refines these categories into Recognition, Context, Interaction, Logic, Semantic, and Reasoning, and Level-3 provides thirteen specific dimensions.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-variable is-5">
+          <div class="column">
+            <div class="box">
+              <h3 class="title is-5">Open-Ended Association Tasks</h3>
+              <p class="is-size-6">MM-OPERA prioritizes free-form responses, employing reference answers as heuristic quality benchmarks rather than rigid correctness criteria.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="box">
+              <h3 class="title is-5">Human-Grounded Taxonomy</h3>
+              <p class="is-size-6">It spans 13 associative dimensions and diverse cultural, linguistic, and thematic contexts.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="box">
+              <h3 class="title is-5">Process-Aware Evaluation</h3>
+              <p class="is-size-6">We deploy tailored LLM-as-a-Judge strategies to evaluate open-ended outputs, applying process-reward-informed judgment to dissect reasoning with precision.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Benchmark at a Glance</h2>
+      <div class="content has-text-centered">
+        <figure>
+          <img src="static/images/mm_opera_overview-1.png" alt="Overview of MM-OPERA tasks and reasoning paths" style="max-width:100%; height:auto;">
+          <figcaption class="is-size-6">Figure 1: An overview of MM-OPERA. The RIA task challenges models to discover meaningful connections between unrelated elements, while the ICA task requires transferring relationship patterns from a context pair to a query item to generate an appropriate target. The reference answer represents just one possible valid response. The association reasoning paths are used to evaluate the coherence and depth of the step-by-step reasoning process.</figcaption>
+        </figure>
+      </div>
+      <div class="content">
+        <p>MM-OPERA comprises 11,497 instances across two core tasks (Figure 1): Remote-Item Association (RIA), testing the ability to link distant concepts with structured reasoning, and In-Context Association (ICA), probing pattern recognition within in-context learning. It prioritizes free-form responses, employing reference answers as heuristic quality benchmarks rather than rigid correctness criteria.</p>
+      </div>
     </div>
-  </div>
-</section>
-<!-- End teaser video -->
+  </section>
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Association Tasks</h2>
+      <div class="columns is-variable is-6">
+        <div class="column">
+          <div class="box">
+            <h3 class="title is-4">Remote-Item Association (RIA)</h3>
+            <div class="content">
+              <ul>
+                <li><em>Instruction:</em> "Describe each image briefly. Analyze and explore the relation between the two images, identifying any possible connections, themes, or shared elements."</li>
+                <li>The reference answer follows Armadillo -&gt; NaturalArmor -&gt; Protection and Kevlar -&gt; BulletproofVest -&gt; Protection to reveal the shared concept "Protection".</li>
+                <li>The RIA dataset includes Multiple-Image variants where identical concepts appear in different images, enabling controlled sensitivity testing of LVLMs' visual perception.</li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="column">
+          <div class="box">
+            <h3 class="title is-4">In-Context Association (ICA)</h3>
+            <div class="content">
+              <ul>
+                <li><em>Instruction:</em> 1) Briefly describe Image 1.1, Image 1.2, and Image 2.1. 2) Analyze the relationship between Image 1.1 and Image 1.2. 3) Design Image 2.2 so that its relationship with Image 2.1 mirrors that between Image 1.1 and Image 1.2.</li>
+                <li>The task requires transferring relationship patterns from a context pair to a query item to generate an appropriate target.</li>
+                <li>The ICA dataset employs a circular evaluation strategy, where each set of four images generates four distinct questions, each requiring the model to reason about one image based on the relationships established by the other three.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End youtube video -->
+  </section>
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+  <section class="section is-light">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Hierarchical Ability Taxonomy</h2>
+      <div class="content">
+        <p>We develop a hierarchical annotation framework to systematically evaluate multimodal associative reasoning abilities.</p>
+        <p>Level-1 (L-1) divides associative abilities into two fundamental categories: Perception and Conception. Level-2 (L-2) further refines these categories into Recognition, Context, Interaction, Logic, Semantic, and Reasoning. Level-3 (L-3) provides the most granular classification with thirteen specific dimensions:</p>
+        <ul>
+          <li><strong>Visual Similarity:</strong> Associations based on visual features like shape, color, texture, and appearance.</li>
+          <li><strong>Semantic Object:</strong> High-level semantic recognition of objects, including fine-grained identification in specific contexts.</li>
+          <li><strong>Contextual Sensory Cues:</strong> Perceptual associations based on visual details like tone, lighting, and spatial layout.</li>
+          <li><strong>Scene Contextualization:</strong> Understanding of overall scene context, including atmosphere and purpose.</li>
+          <li><strong>Abstract Interpretation:</strong> Recognition of abstract concepts and symbolic patterns.</li>
+          <li><strong>Social Insight:</strong> Understanding emotions and interactions between people in visual scenes.</li>
+          <li><strong>Relational Perception:</strong> Comprehension of spatial and logical relationships between objects.</li>
+          <li><strong>Functional Links:</strong> Associations based on functional relationships between concepts.</li>
+          <li><strong>Causal Connections:</strong> Associations based on cause-and-effect relationships.</li>
+          <li><strong>Thematic Links:</strong> Associations within the same theme or context.</li>
+          <li><strong>Cultural Reference:</strong> Associations based on cultural knowledge and specific contexts.</li>
+          <li><strong>Hierarchical Association:</strong> Vertical associations between abstract and concrete concepts.</li>
+          <li><strong>Analogical Reasoning:</strong> Associations based on structural, feature, or pattern similarities.</li>
+        </ul>
+        <p>This hierarchical framework enables systematic evaluation of MLLMs' associative abilities across different cognitive levels, from basic sensory processing to sophisticated abstract reasoning. The progression from L-1 to L-3 mirrors human cognitive development and provides a comprehensive structure for analyzing multimodal understanding capabilities.</p>
       </div>
     </div>
   </section>
-<!--End paper poster -->
 
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Evaluation Framework</h2>
+      <div class="content">
+        <p>Responses are graded automatically by LLM judges using two complementary strategies:</p>
+        <ul>
+          <li><strong>Regular LLM-as-a-Judge scoring:</strong> We adopt unified scoring rubrics that evaluate the association quality of responses, prioritizing depth, coherence, and insight over mere correctness. The holistic score ranges from 0 to 4, and we report Score Rate (SR), High Score Rate (HR-3, HR-4), and DeltaHR = HR-3 - HR-4.</li>
+          <li><strong>Process-Reward LLM-as-a-Judge:</strong> The judge reformats model responses into association paths (s1, s2, ..., sn), where each step is assessed for Reasonableness Rt, Distinctiveness Dt, and Knowledgeability Kt with st = alpha * Rt * Dt + (1 - alpha) * Kt and Sr = sum_t st * delta^t (alpha = 0.9, delta = 0.9).</li>
+        </ul>
+        <p>We employ GPT-4o (gpt-4o-2024-08-06) and DeepSeek-V3 as the mixed basic LLM-as-a-Judge engine for scoring, and the study included 24 undergraduate and graduate students who answered subsets of 485 RIA and 436 ICA questions to establish a human baseline.</p>
+      </div>
     </div>
-</section>
-<!--End BibTex citation -->
+  </section>
 
+  <section class="section is-light">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Results Snapshot</h2>
+      <div class="table-container">
+        <table class="table is-striped is-fullwidth">
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>RIA SR (%)</th>
+              <th>RIA HR-4 (%)</th>
+              <th>ICA SR (%)</th>
+              <th>ICA HR-4 (%)</th>
+              <th>DeltaHR (RIA / ICA)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Gemini-2.5-Pro-Preview</td>
+              <td>60.05</td>
+              <td>23.89</td>
+              <td>63.09</td>
+              <td>12.85</td>
+              <td>17.86 / 28.30</td>
+            </tr>
+            <tr>
+              <td>o4-mini</td>
+              <td>60.33</td>
+              <td>19.86</td>
+              <td>61.55</td>
+              <td>10.24</td>
+              <td>18.03 / 26.36</td>
+            </tr>
+            <tr>
+              <td>Gemini-2.0-Flash-Thinking-Exp</td>
+              <td>59.11</td>
+              <td>17.73</td>
+              <td>61.42</td>
+              <td>9.74</td>
+              <td>18.87 / 28.14</td>
+            </tr>
+            <tr>
+              <td>GPT-4o</td>
+              <td>59.72</td>
+              <td>10.89</td>
+              <td>58.26</td>
+              <td>6.27</td>
+              <td>17.94 / 23.35</td>
+            </tr>
+            <tr>
+              <td>Yi-VL-34B</td>
+              <td>45.25</td>
+              <td>4.97</td>
+              <td>54.39</td>
+              <td>1.30</td>
+              <td>14.66 / 18.23</td>
+            </tr>
+            <tr>
+              <td>Human baseline*</td>
+              <td>61.88</td>
+              <td>22.84</td>
+              <td>68.69</td>
+              <td>31.65</td>
+              <td>26.13 / 29.82</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="is-size-7">*Human results are averaged over 24 participants and sampled data subsets.</p>
+      <div class="content">
+        <p><strong>LVLMs Far Below Humans in Association Reasoning.</strong> MM-OPERA reveals the formidable challenges of associative reasoning for current LVLMs. While latest models like o4-mini and latest Gemini models show improved performance, with SR approaching the human baseline, they still fall short in achieving high-quality associations. For instance, on the RIA task, o4-mini achieves an HR-4 of 19.86% compared to humans' 22.84%, and on the ICA task, Gemini-2.5-Pro-Preview reaches an HR-4 of 12.85% against humans' 31.65%, which demonstrates that sophisticated associative reasoning remains at the cutting edge of LVLM capabilities. Case studies in Appendix C illuminate key limitations, such as cross-domain knowledge retrieval deficiencies and perceptual misalignments.</p>
+        <p><strong>Creativity Gap in Divergent Thinking.</strong> The DeltaHR metric highlights divergent thinking, with most models scoring 12%-20%, showing their ability to generate reasonable yet non-optimal associations. Latest Gemini models lead among LVLMs (18.87% and 28.30% in two tasks), but humans outperform with both higher DeltaHR (26.13% and 29.82%) and HR-3 scores, demonstrating a superior balance of creativity and accuracy, an area where LVLMs remain limited.</p>
+        <p><strong>ICA: Dual Challenge of Pattern Abstraction and Transfer.</strong> Most models perform better on RIA than ICA, highlighting the challenges of pattern-based associative reasoning. ICA requires not only connecting concepts but also abstracting and transferring these patterns to new contexts, a complex process demanding advanced meta-reasoning. Notably, latest Gemini models, Yi-VL-34B and GLM-4V outperform on ICA compared to RIA, suggesting that certain architectures excel in specific associative reasoning tasks. These distinctions may stem from more effective pattern extraction or transfer mechanisms, warranting further investigation.</p>
+        <p><strong>Conservative Reasoning vs. Associative Flexibility.</strong> Analysis shows an inverse correlation between model constraints and associative abilities. Gemini-1.5-Flash (55.86% SR on RIA), optimized for speed, outperforms Gemini-1.5-Pro (45.34% SR), despite Pro's larger size and focus on detailed reasoning. Examination of 500 random RIA samples (Figure 3) shows Pro's conservative behavior to reason the high-rate association, prioritizing factuality and ethics, led to 1 point scores on nearly 20% of RIA questions due to conservative responses like "unrelated" versus Flash's &lt;10%. Flash tended to offer superficial connections where Pro declined. Thus, factuality checks and ethical considerations, while improving reliability for complex tasks, can limit performance on creative association.</p>
+      </div>
+    </div>
+  </section>
 
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Dataset and Curation</h2>
+      <div class="content">
+        <ul>
+          <li>MM-OPERA comprises 11,497 instances across two core tasks: Remote-Item Association (RIA) and In-Context Association (ICA).</li>
+          <li>The RIA dataset includes Multiple-Image variants where identical concepts appear in different images, enabling controlled sensitivity testing of LVLMs' visual perception, and over 25% of the instances exhibit unique concept pairs.</li>
+          <li>We identify three relationship categories: Relation, Mutual Element, and Metaphor, capturing diverse associative connections.</li>
+          <li>Our dataset deliberately incorporates various cultures, 15 languages with their unique linguistic devices, and 22 topic domains.</li>
+          <li>33.35% of the questions and reference answers were sourced from the Remote Associates Test, 4.01% from LI-RAT, and the remaining images were collected from the Internet; all fine-grained annotations were manually constructed and revised to ensure consistency and accuracy.</li>
+        </ul>
+      </div>
+      <div class="buttons">
+        <a href="https://huggingface.co/datasets/titic/MM-OPERA" target="_blank" class="button is-link is-outlined">
+          <span class="icon"><i class="ai ai-huggingface"></i></span>
+          <span>Access MM-OPERA on HuggingFace</span>
+        </a>
+        <a href="MM_OPERA_overview.pdf" target="_blank" class="button is-dark is-outlined">
+          <span class="icon"><i class="fas fa-file-pdf"></i></span>
+          <span>Download Dataset Overview</span>
+        </a>
+      </div>
+    </div>
+  </section>
 
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
+  <section class="section is-light">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Limitations and Responsible Use</h2>
+      <div class="content">
+        <p>Error bars are not provided due to the inherent uncertainty in LLMs and LVLMs, making statistical significance challenging to report.</p>
+        <p>No, due to the offline nature of the process and privacy concerns, full instructions and screenshots are not provided, but the process is compliant and adheres to scientific principles.</p>
+        <p>We have described how we avoid unsafe images during the data curation process.</p>
+        <p>Released models that have a high risk for misuse or dual-use should be released with necessary safeguards, for example by requiring usage guidelines or safety filters.</p>
+      </div>
+    </div>
+  </section>
 
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Paper &amp; Supplementary Material</h2>
+      <div class="content">
+        <p>The anonymous submission bundle includes the main paper and the overview poster below.</p>
+        <div class="buttons">
+          <a href="1120_MM_OPERA_Benchmarking_Ope%20(1).pdf" target="_blank" class="button is-dark is-rounded">
+            <span class="icon"><i class="fas fa-file-pdf"></i></span>
+            <span>Download Paper PDF</span>
+          </a>
+          <a href="MM_OPERA_overview.pdf" target="_blank" class="button is-link is-rounded">
+            <span class="icon"><i class="fas fa-image"></i></span>
+            <span>Download Overview Poster</span>
+          </a>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </section>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title is-3">BibTeX</h2>
+      <pre><code>@inproceedings{mm-opera-2025,
+  title     = {MM-OPERA: Benchmarking Open-ended Association Reasoning for Large Vision-Language Models},
+  author    = {{MM-OPERA Collaboration}},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2025},
+  note      = {Anonymous submission}
+}</code></pre>
+    </div>
+  </section>
 
-    <!-- End of Statcounter Code -->
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page is built atop the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>, adapted for the MM-OPERA benchmark. Please attribute the template if you reuse this site structure. <br>
+              Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
 
-  </body>
-  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
