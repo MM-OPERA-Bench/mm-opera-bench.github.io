@@ -41,7 +41,10 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">MM-OPERA: Benchmarking Open-ended Association Reasoning for Large Vision-Language Models</h1>
-            <p class="subtitle is-4">Measuring divergent and convergent multimodal association intelligence.</p>
+            <br>
+            <p class="subtitle is-5">Measuring divergent and convergent multimodal association intelligence.</p>
+            <p class="subtitle is-6">11,497 Instances | Remote-Item &amp; In-Context Association Tasks | Hierarchical Ability Annotations | LLM-as-a-Judge Evaluation</p>
+
             <div class="is-size-5 publication-authors">
               <!-- <span class="author-block">MM-OPERA Collaboration<sup>*</sup></span> -->
               <span class="author-block">NeurIPS 2025 Datasets and Benchmarks Track (Poster)</span>
@@ -49,6 +52,8 @@
             <!-- <p class="is-size-6">* Equal contribution details withheld for double-blind review.</p> -->
             <p class="is-size-6">Zimeng Huang<sup>1,2</sup>, Jinxin Ke<sup>1</sup>, Xiaoxuan Fan<sup>3</sup>, Yufeng Yang<sup>1</sup>, Yang Liu<sup>1</sup>, Liu Zhonghan<sup>1</sup>, Zedi Wang<sup>1</sup>, Junteng Dai<sup>1</sup>, Haoyi Jiang<sup>1</sup>, Yuyu Zhou<sup>3</sup>, Keze Wang<sup>1</sup>, Ziliang Chen<sup>2*</sup></p>
             <p class="is-size-6"><sup>1</sup>Sun Yat-sen University <sup>2</sup>Peng Cheng Laboratory <sup>3</sup>Jinan University <sup>*</sup>Corresponding Author</p>
+            <br>
+
             <div class="publication-links">
               <span class="link-block">
                 <a href="https://openreview.net/pdf?id=6BpKATZQd8" target="_blank" class="external-link button is-normal is-rounded is-dark">
@@ -63,13 +68,13 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://github.com/MM-OPERA-Bench/MM-OPERA" target="_blank" class="external-link button is-normal is-rounded is-primary">
-                  <span class="icon"><i class="fas fa-solid fa-code"></i></span>
+                <a href="https://github.com/MM-OPERA-Bench/MM-OPERA" target="_blank" class="external-link button is-normal is-rounded is-black">
+                  <span class="icon"><i class="fab fa-github"></i></span>
                   <span>Code</span>
                 </a>
               </span>
               <span class="link-block">
-                <a href="MM_OPERA_overview.pdf" target="_blank" class="external-link button is-normal is-rounded is-link">
+                <a href="mmopera_poster.png" target="_blank" class="external-link button is-normal is-rounded is-link">
                   <span class="icon"><i class="fas fa-image"></i></span>
                   <span>Overview Poster</span>
                 </a>
@@ -81,7 +86,7 @@
                 </a>
               </span>
             </div>
-            <p class="is-size-6">11,497 Instances | Remote-Item &amp; In-Context Association Tasks | Hierarchical Ability Annotations | LLM-as-a-Judge Evaluation</p>
+            
           </div>
         </div>
       </div>
@@ -186,6 +191,24 @@
     </div>
   </section>
 
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Statistics of MM-OPERA</h2>
+      <div class="content has-text-centered">
+        <figure>
+          <img src="static/images/a-f.png" alt="Statistics of MM-OPERA" style="max-width:100%; height:auto;">
+          <figcaption class="is-size-6">Figure 2: Statistics of MM-OPERA.</figcaption>
+        </figure>
+      </div>
+      <div class="content">
+        <p>(a) Hierarchical ability taxonomy consists of 3 levels, refining perceptual and conceptual associations. We report each ability’s frequency as a percentage of total label occurrences to better represent the dataset’s distribution. 
+        <br>(b) Three relationship types capturing diverse associative connections. 
+        <br>(c) The number of hops in the association reasoning path, quantifying different associative reasoning complexity. 
+        <br>(d) Different cultures, (e) 15 languages, and (f) 22 topic domains ensuring broad cultural, linguistic, and thematic diversity.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="section is-light">
     <div class="container is-max-desktop">
       <h2 class="title is-3">Hierarchical Ability Taxonomy</h2>
@@ -218,11 +241,22 @@
       <div class="content">
         <p>Responses are graded automatically by LLM judges using two complementary strategies:</p>
         <ul>
-          <li><strong>Regular LLM-as-a-Judge scoring:</strong> We adopt unified scoring rubrics that evaluate the association quality of responses, prioritizing depth, coherence, and insight over mere correctness. The holistic score ranges from 0 to 4, and we report Score Rate (SR), High Score Rate (HR-3, HR-4), and ΔHR = HR-3 - HR-4.</li>
+          <li><strong>Regular LLM-as-a-Judge scoring:</strong> We adopt unified scoring rubrics that evaluate the association quality of responses, prioritizing depth, coherence, and insight over mere correctness. The holistic score ranges from 0 to 4, and we report Score Rate (SR) (reflecting general performance), High Score Rate (HR-3, HR-4) (measuring the ability to converge on an optimal solution), and ΔHR = HR-3 - HR-4 (a proxy for creative divergent thinking—generating valid but non-optimal associations.)</li>
           <li><strong>Process-Reward LLM-as-a-Judge:</strong> The judge reformats model responses into association paths (s1, s2, ..., sn), where each step is assessed for Reasonableness R<sub>t</sub>, Distinctiveness D<sub>t</sub>, and Knowledgeability K<sub>t</sub> with s<sub>t</sub> = α * R<sub>t</sub> * D<sub>t</sub> + (1 - α) * K<sub>t</sub> and reasoning score S<sub>r</sub> = ∑<sub>t</sub> s<sub>t</sub> * δ<sup>t</sup> (α = 0.9, δ = 0.9).</li>
         </ul>
         <p>We employ GPT-4o (gpt-4o-2024-08-06) and DeepSeek-V3 as the mixed basic LLM-as-a-Judge engine for scoring, and the study included 24 undergraduate and graduate students who answered subsets of 485 RIA and 436 ICA questions to establish a human baseline.</p>
       </div>
+      <div class="buttons"></div>
+        <a href="https://github.com/MM-OPERA-Bench/MM-OPERA" target="_blank" class="button is-black is-outlined">
+          <span class="icon"><i class="fab fa-github"></i></span>
+          <span>Access Code on Github</span>
+        </a>
+        <!-- <a href="MM_OPERA_overview.pdf" target="_blank" class="button is-dark is-outlined">
+          <span class="icon"><i class="fas fa-file-pdf"></i></span>
+          <span>Download Dataset Overview</span>
+        </a>
+      </div> -->
+    </div>
     </div>
   </section>
 
@@ -294,6 +328,7 @@
         </table>
       </div>
       <p class="is-size-7">*Human results are averaged over 24 participants and sampled data subsets.</p>
+      <br>
       <div class="content">
         <p><strong>LVLMs Far Below Humans in Association Reasoning.</strong> MM-OPERA reveals the formidable challenges of associative reasoning for current LVLMs. While latest models like o4-mini and latest Gemini models show improved performance, with SR approaching the human baseline, they still fall short in achieving high-quality associations. For instance, on the RIA task, o4-mini achieves an HR-4 of 19.86% compared to humans' 22.84%, and on the ICA task, Gemini-2.5-Pro-Preview reaches an HR-4 of 12.85% against humans' 31.65%, which demonstrates that sophisticated associative reasoning remains at the cutting edge of LVLM capabilities. Case studies in Appendix C illuminate key limitations, such as cross-domain knowledge retrieval deficiencies and perceptual misalignments.</p>
         <p><strong>Creativity Gap in Divergent Thinking.</strong> The ΔHR metric highlights divergent thinking, with most models scoring 12%-20%, showing their ability to generate reasonable yet non-optimal associations. Latest Gemini models lead among LVLMs (18.87% and 28.30% in two tasks), but humans outperform with both higher ΔHR (26.13% and 29.82%) and HR-3 scores, demonstrating a superior balance of creativity and accuracy, an area where LVLMs remain limited.</p>
@@ -320,11 +355,11 @@
           <span class="icon"><i class="fas fa-solid fa-database"></i></span>
           <span>Access MM-OPERA on HuggingFace</span>
         </a>
-        <a href="MM_OPERA_overview.pdf" target="_blank" class="button is-dark is-outlined">
+        <!-- <a href="MM_OPERA_overview.pdf" target="_blank" class="button is-dark is-outlined">
           <span class="icon"><i class="fas fa-file-pdf"></i></span>
           <span>Download Dataset Overview</span>
         </a>
-      </div>
+      </div> -->
     </div>
   </section>
 
@@ -350,7 +385,7 @@
             <span class="icon"><i class="fas fa-file-pdf"></i></span>
             <span>Download Paper PDF</span>
           </a>
-          <a href="MM_OPERA_overview.pdf" target="_blank" class="button is-link is-rounded">
+          <a href="mmopera_poster.png" target="_blank" class="button is-link is-rounded">
             <span class="icon"><i class="fas fa-image"></i></span>
             <span>Download Overview Poster</span>
           </a>
